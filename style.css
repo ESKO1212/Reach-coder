@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+:root{
+    --Rose_White: #fff5fa;
+    --Eggshell: #f3e6d8;
+    --Light_Grey: #e4ded8;
+    --Wenge_Brown: #5f574e;
+    --Dark_Charcoal: #302d2c;
+    --Nutmeg: #854632;
+    --Dark_Raspberry: #7b284f;
+}
+body{
+    background-color: var(--Eggshell);
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 10px;
+    color: var(--Wenge_Brown);
+}
+
+.wrapper{
+    background-color: #fff;
+    width: 50%;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.wrapper>div{
+    padding: 30px 0px;
+    border-bottom:1px solid var(--Light_Grey);
+}
+.wrapper>div:last-child{
+    padding-bottom:0px;
+    border-bottom:0px solid var(--Light_Grey);
+}
+
+.wrapper>.pic{
+    background-image: url("assets/images/image-omelette.jpeg");
+    background-position: center;
+    background-size: cover;
+    min-width: 150px;
+    max-width: 800px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.font1{
+    color: var(--Nutmeg);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+.intro>h1{ color: var(--Dark_Charcoal); }
+ul{ list-style-position: inside; }
+li{ margin: 10px 0px; }
+ul>li>span{ font-weight: 600; }
+li::marker{
+    color: var(--Dark_Raspberry);
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.time{
+    background-color: var(--Rose_White);
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.time>div{
+     color: var(--Dark_Raspberry);
+     font-weight: 600;
+     padding-bottom: 10px;
+}
+ul{ padding-left: 10px; }
+.instructions>ul>li{ list-style-type: numeric; }
+.instructions>ul>li span{ padding-left:10px; }
+.instructions ul{
+    list-style-position: outside;
+    margin-left: 15px;
+}
+
+.nutrition li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid var(--Light_Grey);
+    padding: 10px 30px;
+}
+.nutrition ul{ width: 60%; }
+.nutrition li span:last-child{ color: var(--Dark_Raspberry); }
+.nutrition li:last-child{ border-bottom: unset ; }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
